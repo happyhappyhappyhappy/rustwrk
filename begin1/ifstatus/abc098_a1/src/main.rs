@@ -1,6 +1,6 @@
 use proconio::input;
 
-fn main() {
+fn main(){
     input!{
         a:i64,
         b:i64,
@@ -8,21 +8,24 @@ fn main() {
     let plus:i64=a+b;
     let minus:i64=a-b;
     let cross:i64=a*b;
-    let mut ans:i64=std::i64::MIN;
-    ans = if plus > ans {
+    let mut answer:i64=std::i64::MIN;
+
+    answer = if plus > answer{
         plus
-    } else{
-        ans
+    }else{
+        answer
     };
-    ans = if minus > ans {
+
+    answer =  if minus > answer{
         minus
     }else{
-        ans
+        answer
     };
-    ans = if cross > ans{
+
+    answer = if cross > answer{
         cross
     }else{
-        ans
+        answer
     };
-    println!("{}",ans);
+    println!("{}",answer);
 }
