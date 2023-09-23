@@ -6,3 +6,6 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+# 競技プログラミングの入出力サポートその1
+# https://docs.rs/crate/proconio/0.4.5
+proconio = { version = "0.4.5", features = ["derive"] }

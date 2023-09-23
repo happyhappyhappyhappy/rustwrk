@@ -1,0 +1,141 @@
+[package]
+name = "abc061_a1"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+# AtCoder 2019年言語アップデート以降に使用できるクレート
+
+# 各クレートの説明
+# https://github.com/rust-lang-ja/atcoder-rust-resources/wiki/2020-Update
+
+# 数値型の抽象化、多倍長整数、複素数、分数、及び整数型の拡張
+num = "0.4.1"
+num-bigint = "0.4.4"
+num-complex = "=0.4.4"
+num-integer = "=0.1.45"
+num-iter="0.1.43"
+num-rational = "0.4.1"
+num-traits = "0.2.16" # https://docs.rs/crate/num-traits/0.2.16
+
+# `num-traits`の自動実装
+num-derive = "=0.4.0" # https://docs.rs/crate/num-derive/0.4.0
+
+# NumPyの`ndarray`のような多次元配列
+# https://docs.rs/crate/ndarray/0.15.6
+ndarray = "0.15.6"
+
+# 線形代数
+# https://docs.rs/crate/nalgebra/0.32.3
+nalgebra = "=0.32.3"
+
+# (線形)代数の抽象化
+alga = "=0.9.3"
+
+# libmのRust実装
+# https://docs.rs/crate/libm/0.2.7
+libm = "=0.2.7"
+
+# 乱数
+# https://docs.rs/crate/rand/0.8.5
+rand = { version = "=0.8.5", features = ["small_rng"] }
+# https://docs.rs/getrandom/0.2.10/getrandom/
+getrandom = "=0.2.10"
+# https://docs.rs/rand_chacha/0.3.1/ran0.6.3
+rand_chacha = "=0.3.1"
+# https://docs.rs/crate/rand_core/0.6.4
+rand_core = "=0.6.4"
+# https://docs.rs/rand_hc/0.3.2/rand_hc/
+rand_hc = "=0.3.2"
+# https://docs.rs/crate/rand_pcg/0.3.1
+rand_pcg = "=0.3.1"
+
+# 乱数の分布の追加
+# https://docs.rs/rand_distr/0.4.3/rand_distr/
+rand_distr = "=0.4.3"
+
+# グラフ
+# https://docs.rs/petgraph/0.6.4/petgraph/
+petgraph = "=0.6.4"
+
+# 挿入順を保持するhash table
+# https://docs.rs/crate/indexmap/2.0.0
+indexmap = "2.0.0"
+
+# 正規表現
+# https://docs.rs/crate/regex/1.9.5
+regex = "1.9.5"
+
+# staticアイテムの遅延初期化
+# https://docs.rs/crate/lazy_static/1.4.0
+lazy_static = "=1.4.0"
+
+# `NotNan<f64>`, `OrderedFloat<f64>`
+# https://docs.rs/crate/ordered-float/3.9.1
+ordered-float = "3.9.1"
+
+# ASCII文字列
+# https://docs.rs/crate/ascii/1.1.0
+ascii = "=1.1.0"
+
+# permutation
+# https://docs.rs/crate/permutohedron/0.2.4
+permutohedron = "=0.2.4"
+
+# スライスの拡張
+# https://docs.rs/crate/superslice/1.0.0
+superslice = "=1.0.0"
+
+# イテレータの拡張
+# https://docs.rs/crate/itertools/0.11.0
+itertools = "=0.11.0"
+
+# イテレータの拡張（一次元累積和と浮動小数点数の等差数列）
+# https://docs.rs/crate/itertools-num/0.1.3
+itertools-num = "=0.1.3"
+
+# `BTreeMap`, `BTreeSet`, `HashMap`, `HashSet`のリテラル用マクロ
+# https://docs.rs/crate/maplit/1.0.2
+maplit = "=1.0.2"
+
+# 即席enum `Either<L, R>`
+# https://docs.rs/crate/either/1.9.0
+either = "=1.9.0"
+
+# `BTreeMap`, `BTreeSet`, `HashMap`, `HashSet`, `Vec`の永続データ構造版
+# https://docs.rs/crate/im-rc/15.1.0
+im-rc = "=15.1.0"
+
+# 可変長bit set
+# https://docs.rs/crate/fixedbitset/0.4.2
+fixedbitset = "0.4.2"
+
+# 可変長bit set
+# https://docs.rs/crate/bitset-fixed/0.1.0
+bitset-fixed = "=0.1.0"
+
+# 競技プログラミングの入出力サポートその1
+# https://docs.rs/crate/proconio/0.4.5
+proconio = { version = "0.4.5", features = ["derive"] }
+
+# 競技プログラミングの入出力サポートその2
+# https://docs.rs/crate/text_io/0.1.12
+text_io = "0.1.12"
+
+# 競技プログラミングの入出力サポートその3
+# https://docs.rs/crate/whiteread/0.5.0
+whiteread = "=0.5.0"
+
+# 高速なハッシュ関数
+# https://docs.rs/crate/rustc-hash/1.1.0
+rustc-hash = "=1.1.0"
+
+# ある長さまでは要素を「直に」持つ可変長配列
+# https://docs.rs/crate/smallvec/1.11.1
+smallvec = "1.11.1"
